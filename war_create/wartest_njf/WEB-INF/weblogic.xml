@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- context-root 값으로 "/" 하면 /webtest 디렉토리 아래에 있는 내용을 "/" 아래로 참조하겠다는 것을 의미
+		 즉, context-root는 실제로 존재하는 디렉토리명을 작성하는 것이 아니라 JSP/서블릿 컨테이너가 JSP/서블릿을 
+		 사용자에게 서비스 하기 위한 가상경로를 설정하는 것이라고 보는 편이 옳다.-->
+	
+</weblogic-web-app>

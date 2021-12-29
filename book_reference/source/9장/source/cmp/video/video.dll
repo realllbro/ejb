@@ -1,0 +1,8 @@
+drop table video;
+
+create table video (
+  isbn varchar2(20) primary key,
+  name varchar2(50) not null,
+  price   number not null
+);
+

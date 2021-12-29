@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+    
+    <!-- ========== Data Source Configuration =============================== -->
+    <data-sources />
+    
+    <!-- ========== Form Bean Definitions ================================== -->
+    <form-beans>
+        <form-bean name="listForm" type="kr.co.hanbitbook.ejb.sguestbook.form.ListForm">
+            <form-property name="page" type="java.lang.String" />
+        </form-bean>
+        <form-bean name="writeForm" type="kr.co.hanbitbook.ejb.sguestbook.form.WriteForm">
+            <form-property name="content" type="java.lang.String" />
+            <form-property name="name" type="java.lang.String" />
+        </form-bean>
+        <form-bean name="loginForm" type="kr.co.hanbitbook.ejb.sguestbook.form.LoginForm">
+            <form-property name="passwd" type="java.lang.String" />
+            <form-property name="id" type="java.lang.String" />
+        </form-bean>
+    </form-beans>
+    
+    <!-- ========== Global Exception Definitions ============================== -->
+    <global-exceptions />
+    
+    <!-- ========== Global Forward Definitions =============================== -->
+    <global-forwards />
+    
+    <!-- ========== Action Mapping Definitions =============================== -->
+    <action-mappings>
+        <action
+            attribute="listForm"
+            input="/list.do"
+            name="listForm"
+            path="/list"
+            scope="request"
+            type="kr.co.hanbitbook.ejb.sguestbook.action.ListAction">
+            <forward name="list" path="/list.jsp" />
+        </action>
+        <action
+            attribute="writeForm"
+            input="/writeform.do"
+            name="writeForm"
+            path="/write"
+            scope="request"
+            type="kr.co.hanbitbook.ejb.sguestbook.action.WriteAction">
+            <forward name="list" path="/list.do" redirect="true" />
+        </action>
+        <action path="/writeform" type="kr.co.hanbitbook.ejb.sguestbook.action.WriteformAction" validate="false">
+            <forward name="writeform" path="/writeform.jsp" />
+        </action>
+        <action
+            attribute="loginForm"
+            input="/loginform.do"
+            name="loginForm"
+            path="/login"
+            scope="request"
+            type="kr.co.hanbitbook.ejb.sguestbook.action.LoginAction">
+            <forward name="list" path="/list.do" redirect="true" />
+        </action>
+        <action path="/loginform" type="kr.co.hanbitbook.ejb.sguestbook.action.LoginformAction" validate="false">
+            <forward name="loginform" path="/loginform.jsp" />
+        </action>
+        <action path="/delete" type="kr.co.hanbitbook.ejb.sguestbook.action.DeleteAction" validate="false">
+            <forward name="list" path="/list.do" redirect="true" />
+        </action>
+        <action path="/logout" type="kr.co.hanbitbook.ejb.sguestbook.action.LogoutAction" validate="false">
+            <forward name="list" path="list.do" redirect="true" />
+        </action>
+    </action-mappings>
+    
+    <!-- ========== Controller Configuration ================================ -->
+    <controller />
+    
+    <!-- ========== Message Resources Definitions ============================ -->
+    
+    <!-- ========== Plug Ins Configuration ================================= -->
+    <message-resources parameter="kr.co.hanbitbook.ejb.sguestbook.ApplicationResources" />
+</struts-config>
+

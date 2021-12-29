@@ -1,0 +1,27 @@
+create table customer(
+id varchar2(8) primary key,
+password varchar2(8) not null,
+name varchar2(20) not null);
+
+create table moreinfo(
+id varchar2(8) primary key,
+point number(4) not null,
+constraint moreinfo_id_fk foreign key(id) references customer(id));
+
+create table selectitem(
+id varchar2(8),
+itemid varchar2(8),
+itemname varchar2(10),
+constraint selectitem_id_fk foreign key(id) references customer(id));
+
+
+create table interestitem(
+itemid varchar2(8) primary key,
+itemname varchar2(10)
+)
+
+create table customer_interestitem(
+id varchar2(8),
+itemid varchar2(8),
+constraint customer_interestitem_id_fk foreign key(id) references customer(id),
+constraint ci_itemid_fk foreign key(itemid) references interestitem(itemid));

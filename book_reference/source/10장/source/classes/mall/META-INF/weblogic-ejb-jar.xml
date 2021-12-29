@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE weblogic-ejb-jar PUBLIC '-//BEA Systems, Inc.//DTD WebLogic 8.1.0 EJB//EN' 'http://www.bea.com/servers/wls810/dtd/weblogic-ejb-jar.dtd'>
+<weblogic-ejb-jar>
+    <weblogic-enterprise-bean>
+        <ejb-name>Customer</ejb-name>
+        <entity-descriptor>
+            <persistence>
+                <persistence-use>
+                    <type-identifier>WebLogic_CMP_RDBMS</type-identifier>
+                    <type-version>6.0</type-version>
+                    <type-storage>META-INF/weblogic-cmp-rdbms-jar.xml</type-storage>
+                </persistence-use>
+            </persistence>
+        </entity-descriptor>
+        <local-jndi-name>Customer</local-jndi-name>
+    </weblogic-enterprise-bean>
+    <weblogic-enterprise-bean>
+        <ejb-name>Interestitem</ejb-name>
+        <entity-descriptor>
+            <persistence>
+                <persistence-use>
+                    <type-identifier>WebLogic_CMP_RDBMS</type-identifier>
+                    <type-version>6.0</type-version>
+                    <type-storage>META-INF/weblogic-cmp-rdbms-jar.xml</type-storage>
+                </persistence-use>
+            </persistence>
+        </entity-descriptor>
+        <local-jndi-name>Interestitem</local-jndi-name>
+    </weblogic-enterprise-bean>
+    <weblogic-enterprise-bean>
+        <ejb-name>Selectitem</ejb-name>
+        <entity-descriptor>
+            <persistence>
+                <persistence-use>
+                    <type-identifier>WebLogic_CMP_RDBMS</type-identifier>
+                    <type-version>6.0</type-version>
+                    <type-storage>META-INF/weblogic-cmp-rdbms-jar.xml</type-storage>
+                </persistence-use>
+            </persistence>
+        </entity-descriptor>
+        <local-jndi-name>Selectitem</local-jndi-name>
+    </weblogic-enterprise-bean>
+    <weblogic-enterprise-bean>
+        <ejb-name>Moreinfo</ejb-name>
+        <entity-descriptor>
+            <persistence>
+                <persistence-use>
+                    <type-identifier>WebLogic_CMP_RDBMS</type-identifier>
+                    <type-version>6.0</type-version>
+                    <type-storage>META-INF/weblogic-cmp-rdbms-jar.xml</type-storage>
+                </persistence-use>
+            </persistence>
+        </entity-descriptor>
+        <local-jndi-name>Moreinfo</local-jndi-name>
+    </weblogic-enterprise-bean>
+</weblogic-ejb-jar>

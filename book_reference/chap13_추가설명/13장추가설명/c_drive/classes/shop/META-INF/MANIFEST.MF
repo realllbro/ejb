@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+
+Name: kr/co/hanbitbook/ejb/examples/shop/UserManagerBean.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/UserManagerHome.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/Category.class
+
+Name: META-INF/ejb-jar.xml
+
+Name: kr/co/hanbitbook/ejb/examples/shop/UserManager.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/UsersHome.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/BuylogHome.class
+
+Name: META-INF/weblogic-cmp-rdbms-jar.xml
+
+Name: kr/co/hanbitbook/ejb/examples/shop/Item.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/CategoryHome.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/Buylog.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/CategoryManagerBean.class
+
+Name: META-INF/weblogic-ejb-jar.xml
+
+Name: kr/co/hanbitbook/ejb/examples/shop/CategoryManager.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/ItemHome.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/UsersBean.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/CategoryBean.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/ItemBean.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/Users.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/CategoryManagerHome.class
+
+Name: kr/co/hanbitbook/ejb/examples/shop/BuylogBean.class
+

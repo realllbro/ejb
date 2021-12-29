@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+
+Name: kr/co/hanbitbook/ejb/examples/mall/SelectitemHome.class
+
+Name: kr/co/hanbitbook/ejb/examples/mall/CustomerHome.class
+
+Name: META-INF/ejb-jar.xml
+
+Name: kr/co/hanbitbook/ejb/examples/mall/MoreinfoEJB.class
+
+Name: META-INF/weblogic-cmp-rdbms-jar.xml
+
+Name: kr/co/hanbitbook/ejb/examples/mall/CustomerEJB.class
+
+Name: kr/co/hanbitbook/ejb/examples/mall/Moreinfo.class
+
+Name: kr/co/hanbitbook/ejb/examples/mall/SelectitemEJB.class
+
+Name: kr/co/hanbitbook/ejb/examples/mall/InterestitemEJB.class
+
+Name: META-INF/weblogic-ejb-jar.xml
+
+Name: kr/co/hanbitbook/ejb/examples/mall/MoreinfoHome.class
+
+Name: kr/co/hanbitbook/ejb/examples/mall/Selectitem.class
+
+Name: kr/co/hanbitbook/ejb/examples/mall/InterestitemHome.class
+
+Name: kr/co/hanbitbook/ejb/examples/mall/Interestitem.class
+
+Name: kr/co/hanbitbook/ejb/examples/mall/Customer.class
+
